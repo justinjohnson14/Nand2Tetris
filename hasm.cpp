@@ -1,3 +1,4 @@
+#include <fstream>
 #include <unordered_map>
 #include <string>
 
@@ -55,7 +56,15 @@ std::unordered_map<std::string, std::string> Jump = {
     {"JMP",  "111"}
 };
 
+std::unordered_map<std::string, std::string> Labels;
+
 int main(int argc, char** argv)
 {
+    std::ifstream file(argv[0]);
+    std::string line;
 
+    while(std::getline(file, line))
+    {
+
+    }    
 }
